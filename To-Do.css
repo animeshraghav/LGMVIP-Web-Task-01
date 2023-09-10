@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background-color: linear-gradient(135deg, #153677, #4e085f);
+    background-image: linear-gradient(135deg, #153677, #4e085f);
     padding: 10px;
 }
 .todo{
@@ -15,14 +15,15 @@
     max-width: 540px;
     background: #fff;
     margin: 100px auto 20px;
-    padding: 40px, 30px, 70px;
+    padding: 20px, 30px, 70px;
     border-radius: 10px;
 }
 .todo h2{
     color: #002765;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
 .todo img{
     width:30px;
