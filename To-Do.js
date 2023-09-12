@@ -1,6 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-
+const addButton = document.getElementById("addTask");
 function addTask(){
     if(inputBox.value === ''){
         alert('You must write something');
@@ -27,6 +27,30 @@ listContainer.addEventListener("click", function(e){
         saveData();
     }
 }, false);
+// // Add event listener to the form for Enter key press
+// document.getElementById("todo-form").addEventListener("submit", function (event) {
+//     event.preventDefault(); // Prevent form submission
+
+//     // Trigger a click event on the "Add" button
+//     addButton.click();
+// });
+
+// // Add event listener to the "Add" button
+// addButton.addEventListener("click", function () {
+//     // Your addTask logic goes here
+//     const taskText = inputBox.value;
+    
+//     if (taskText.trim() !== '') {
+//         // Create and add the task to the list
+//         const listContainer = document.getElementById("list-container");
+//         const li = document.createElement("li");
+//         li.textContent = taskText;
+//         listContainer.appendChild(li);
+        
+//         // Clear the input field
+//         inputBox.value = '';
+//     }
+// });
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
