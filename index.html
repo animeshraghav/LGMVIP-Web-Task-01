@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="To-Do.css">
 </head>
 <body>
+    <div class="header">
+        <nav>
+            <a href="#" class = "logo"><img src="images/logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+            <div class="toggle-btn" id="btn">
+                <span id="btnText">Dark</span>
+                <img src="images/moon.png" id="btnIcon">
+            </div>
+        </nav>
+    </div>
     <div class="container">
         <div class="todo">
             <h2>To-Do List <img src="images/notes.png"></h2>
@@ -30,6 +43,11 @@
             </ul>
         </div>
     </div>
+    <footer>
+        <div class="footerbottom">
+            <p> &copy; 2023 Animesh Raghav. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="To-Do.js"></script>
 </body>
 </html>
