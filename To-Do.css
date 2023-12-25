@@ -20,42 +20,51 @@ body {
     background: var(--background-image);
     color: var(--text-color);
     transition: background 0.8s, color 0.8s;
+    /* margin: 0; */
+    /* padding: 0; */
 }
 
 .header{
     width: 100%;
-    min-height: 100vh;
-    padding: 0 8%;
+    /* min-height: 100vh; */
+    padding: 0 2%;
     position: relative;
     overflow: hidden;
+    background-color: rgba(111, 105, 105, 0.1); ;
 }
-.nav{
+nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
+    padding: 5px 0;
+}
+.logo{
+    width: 10px;
+    margin-left: 5%;
 }
 .logo img{
-    width: 80px;
+    width: 40px;
 }
 nav ul{
     width: 100%;
-    text-align: right;
+    text-align: left;
     list-style: none;
-    margin-right: 50px;
+    margin-left: 50px;
+    font-style: bold;
 }
 nav ul li{
     display: inline-block;
     margin: 5px 15px;
+    font-style: bold;
 }
 nav ul li a{
     text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
+    color: var(--title-color);
+    font-size: 110%;
+    font-style: bold;
 }
 .toggle-btn{
     background: #4864ff;
-    color: #fff;
+    color:#fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,14 +72,14 @@ nav ul li a{
     height: 40px;
     border-radius: 20px;
     cursor: pointer;
+    margin-right: 5%;
 }
 .toggle-btn img{
     width: 25px;
     margin-left: 10px;
 }
-
 .container {
-    margin-top: 0%;
+    margin-top: 5%;
     width: 100%; 
     /* min-height: 85vh; */
     /* background: radial-gradient(circle, rgba(243, 161, 126, 1) 20%, rgba(148, 187, 233, 1) 100%); */
@@ -80,14 +89,14 @@ nav ul li a{
 }
 
 .todo {
-    margin-top: 0%;
+    /* margin-top: 0%; */
     width: 100%;
     max-width: 800px;
     background: rgba(255, 255, 255, 0.6);
-    margin: 100px auto 10px;
+    margin: 20px auto 100px;
     padding: 20px 30px 30px;
     border-radius: 20px;
-    box-shadow: 10px 20px 25px rgb(129, 129, 129, 0.5);
+    box-shadow: 10px 20px 25px rgb(129, 129, 129, 0.4);
 }
 
 .todo h2 {
@@ -95,7 +104,7 @@ nav ul li a{
     display: flex;
     align-items: center;
     padding-top: 30px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-bottom: 30px;
     font-size: 40px;
 }
@@ -121,9 +130,12 @@ input {
     background: transparent;
     padding: 10px;
     font-weight: 14px;
-    font-style: italic;
+    /* font-style: italic; */
     letter-spacing: 1px;
 }
+input::placeholder {
+    font-style: italic;
+  }
 
 button {
     /* border: #ff5945; */
@@ -206,4 +218,23 @@ footer {
 .footer-container {
     max-width: 100vw; 
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0 5%;
+    }
+
+    .nav ul {
+        margin-left: 0;
+    }
+
+    .toggle-btn {
+        margin-right: 5%;
+    }
+
+    .container,
+    .todo {
+        padding: 15px;
+    }
 }
