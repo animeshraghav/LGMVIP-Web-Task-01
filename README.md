@@ -1,8 +1,10 @@
 # To-Do List Web App
 - In this Web App, the User can list multiple tasks and (check/cancel out) or delete if they completed those tasks.
 - This project is strictly based on HTML, CSS & Javascript language.
+
+#Key features
 - In this, the User can toggle between light/dark mode through the dedicated button.
-- And, while hovering over the add button it also expands.
+- 'Add' button expands when hovered over.
 
 ---
 - These are some To-Do List Web App screenshots:
